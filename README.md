@@ -1,3 +1,5 @@
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=552381615)
+
 # Python project template
 
 This is a template repository for any Python project that comes with the following dev tools:
@@ -19,7 +21,7 @@ This repository is setup for Python 3.10. To customize that, change the `VARIANT
 
 ## With devcontainer
 
-This repository comes with a devcontainer (a Dockerized Python environment). If you open it in Codespaces, it should automatically initialize the devcontainer. 
+This repository comes with a devcontainer (a Dockerized Python environment). If you open it in Codespaces, it should automatically initialize the devcontainer.
 
 Locally, you can open it in VS Code with the Dev Containers extension installed.
 
@@ -51,6 +53,6 @@ When you're ready to run tests, just run:
 pytest
 ```
 
-### 🔎 Found an issue or have an idea for improvement? 
+### 🔎 Found an issue or have an idea for improvement?
 
 Help me make this template repository better by letting us know and opening an issue!

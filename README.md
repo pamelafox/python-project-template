@@ -2,10 +2,10 @@
 
 This is a template repository for any Python project that comes with the following dev tools:
 
-* black: auto-formats code
-* isort: sorts the imports
-* flake8: looks for common errors
-* pyupgrade: upgrades Python syntax
+* `black`: auto-formats code
+* `isort`: sorts the imports
+* `flake8`: looks for common errors
+* `pyupgrade`: upgrades Python syntax
 
 All of those checks are run as pre-commit hooks using the `pre-commit` library.
 
@@ -51,6 +51,29 @@ When you're ready to run tests, just run:
 pytest
 ```
 
-### 🔎 Found an issue or have an idea for improvement?
+# File breakdown
+
+Here's a short explanation of each file/folder in this template:
+
+* `.devcontainer`: Folder containing files used for setting up a devcontainer
+  * `devcontainer.json`: File configuring the devcontainer, includes VS Code settings
+  * `Dockerfile`: File with commands to build the devcontainer's Docker image
+* `.github`: Folder for Github-specific files and folders
+  * `workflows`: Folder containing Github actions config files
+    * `python.yaml`: File configuring Github action that runs tools and tests
+* `tests`: Folder containing Python tests
+  * `main_test.py`: File with pytest-style tests of main.py
+* `.flake8`: File configuring the flake8 tool
+* `.gitignore`: File describing what file patterns Git should never track
+* `.pre-commit-config.yaml`: File listing all the pre-commit hooks and args
+* `main.py`: The main (and currently only) Python file for the program
+* `pyproject.toml`: File configuring most of the Python dev tools
+* `README.md`: You're reading it!
+* `requirements-dev.txt`: File listing all PyPi packages required for development
+* `requirements.txt`: File listing all PyPi packages required for production
+
+For a longer explanation, read [this blog post](http://blog.pamelafox.org/2022/09/how-i-setup-python-project.html).
+
+# 🔎 Found an issue or have an idea for improvement?
 
 Help me make this template repository better by letting us know and opening an issue!

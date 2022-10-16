@@ -1,5 +1,3 @@
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=552381615)
-
 # Python project template
 
 This is a template repository for any Python project that comes with the following dev tools:

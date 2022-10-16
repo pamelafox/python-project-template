@@ -1,0 +1,14 @@
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+[tool.pytest.ini_options]
+addopts = "-ra --cov"
+testpaths = ["tests"]
+pythonpath = ['.']
+
+[tool.pylint.messages_control]
+disable = "C0114,C0115,C0116"
+
+[tool.isort]
+profile = "black"

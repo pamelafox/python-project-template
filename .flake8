@@ -1,0 +1,5 @@
+[flake8]
+ignore = D203
+max-complexity = 10
+max-line-length = 100
+exclude = .venv

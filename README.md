@@ -4,7 +4,7 @@ This is a template repository for any Python project that comes with the followi
 
 * `black`: auto-formats code
 * `isort`: sorts the imports
-* `flake8`: looks for common errors
+* `ruff`: looks for common errors
 * `pyupgrade`: upgrades Python syntax
 
 All of those checks are run as pre-commit hooks using the `pre-commit` library.
@@ -63,7 +63,6 @@ Here's a short explanation of each file/folder in this template:
     * `python.yaml`: File configuring Github action that runs tools and tests
 * `tests`: Folder containing Python tests
   * `main_test.py`: File with pytest-style tests of main.py
-* `.flake8`: File configuring the flake8 tool
 * `.gitignore`: File describing what file patterns Git should never track
 * `.pre-commit-config.yaml`: File listing all the pre-commit hooks and args
 * `main.py`: The main (and currently only) Python file for the program

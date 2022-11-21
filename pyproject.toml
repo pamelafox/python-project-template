@@ -12,3 +12,7 @@ disable = "C0114,C0115,C0116"
 
 [tool.isort]
 profile = "black"
+
+[tool.ruff]
+line-length = 100
+ignore = ["D203"]

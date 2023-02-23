@@ -1,19 +1,18 @@
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "UP"]
+ignore = ["D203"]
+show-source = true
+
 [tool.black]
 line-length = 100
-target-version = ['py39']
+target-version = ["py310"]
+
+[tool.pylint.messages_control]
+disable = "C0114,C0115,C0116"
 
 [tool.pytest.ini_options]
 addopts = "-ra --cov"
 testpaths = ["tests"]
 pythonpath = ['.']
-
-[tool.pylint.messages_control]
-disable = "C0114,C0115,C0116"
-
-[tool.isort]
-profile = "black"
-
-[tool.ruff]
-line-length = 100
-ignore = ["D203"]
-show-source = true

@@ -2,18 +2,16 @@
 
 This is a template repository for any Python project that comes with the following dev tools:
 
+* `ruff`: identifies many errors and style issues (`flake8`, `isort`, `pyupgrade`)
 * `black`: auto-formats code
-* `isort`: sorts the imports
-* `ruff`: looks for common errors
-* `pyupgrade`: upgrades Python syntax
 
-All of those checks are run as pre-commit hooks using the `pre-commit` library.
+Those checks are run as pre-commit hooks using the `pre-commit` library.
 
 It includes `pytest` for testing plus the `pytest-cov` plugin to measure coverage.
 
 The checks and tests are all run using Github actions on every pull request and merge to main.
 
-This repository is setup for Python 3.10. To customize that, change the `VARIANT` argument in `.devcontainer/devcontainer.json`, and change the flag passed into `pyupgrade` in `.precommit-config.yaml` and `.github/workflows/python.yaml`.
+This repository is setup for Python 3.10. To customize that, change the `VARIANT` argument in `.devcontainer/devcontainer.json`, change the config options in `.precommit-config.yaml` and change the version number in `.github/workflows/python.yaml`.
 
 ## Development instructions
 
@@ -35,7 +33,7 @@ source .venv/bin/activate
 Then install the dev tools and pre-commit hooks:
 
 ```
-pip3 install --user -r requirements-dev.txt
+python3 -m pip install --user -r requirements-dev.txt
 pre-commit install
 ```
 
@@ -45,10 +43,10 @@ This repository starts with a very simple `main.py` and a test for it at `tests/
 You'll want to replace that with your own code, and you'll probably want to add additional files
 as your code grows in complexity.
 
-When you're ready to run tests, just run:
+When you're ready to run tests, run:
 
 ```
-pytest
+python3 -m pytest
 ```
 
 # File breakdown

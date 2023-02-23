@@ -1,9 +1,7 @@
 -r requirements.txt
 pre-commit
-black
-isort
 ruff
-pyupgrade
+black
 pytest
 coverage
 pytest-cov

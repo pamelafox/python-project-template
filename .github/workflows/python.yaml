@@ -23,8 +23,6 @@ jobs:
           run: ruff .
         - name: Check formatting with black
           run: black . --check --verbose
-        - name: Check Python import sorting
-          run: isort --check .
         - name: Run unit tests
           run: |
             pytest

@@ -11,7 +11,7 @@ It includes `pytest` for testing plus the `pytest-cov` plugin to measure coverag
 
 The checks and tests are all run using Github actions on every pull request and merge to main.
 
-This repository is setup for Python 3.10. To customize that, change the `VARIANT` argument in `.devcontainer/devcontainer.json`, change the config options in `.precommit-config.yaml` and change the version number in `.github/workflows/python.yaml`.
+This repository is setup for Python 3.11. To customize that, change the `VARIANT` argument in `.devcontainer/devcontainer.json`, change the config options in `.precommit-config.yaml` and change the version number in `.github/workflows/python.yaml`.
 
 ## Development instructions
 

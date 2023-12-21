@@ -1,0 +1,32 @@
+name: Linter
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          cache: 'pip'
+          cache-dependency-path: 'requirements.txt'
+
+      - name: Install pre-commit & packages in requirements.txt
+        run: pip install pre-commit -r requirements.txt
+
+      - name: Cache pre-commit
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pre-commit/
+          key: ${{ runner.os }}-pre-commit-${{ hashFiles('**/.pre-commit-config.yaml') }}
+
+      - name: Execute pre-commit
+        run: pre-commit run --show-diff-on-failure --all-files

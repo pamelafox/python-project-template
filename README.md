@@ -63,13 +63,11 @@ Here's a short explanation of each file/folder in this template:
   * `main_test.py`: File with pytest-style tests of main.py
 * `.gitignore`: File describing what file patterns Git should never track
 * `.pre-commit-config.yaml`: File listing all the pre-commit hooks and args
-* `main.py`: The main (and currently only) Python file for the program
+* `./src/main.py`: The main (and currently only) Python file for the program
 * `pyproject.toml`: File configuring most of the Python dev tools
 * `README.md`: You're reading it!
-* `requirements-dev.txt`: File listing all PyPi packages required for development
 * `requirements.txt`: File listing all PyPi packages required for production
 
-For a longer explanation, read [this blog post](http://blog.pamelafox.org/2022/09/how-i-setup-python-project.html).
 
 # 🔎 Found an issue or have an idea for improvement?
 

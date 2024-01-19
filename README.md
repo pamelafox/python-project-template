@@ -13,8 +13,8 @@ The checks and tests are all run using Github actions on every pull request and 
 
 This repository is setup for Python 3.11. To customize that:
 1. Change the `image` argument in `.devcontainer/devcontainer.json` (see [https://github.com/devcontainers/images/tree/main/src/python](https://github.com/devcontainers/images/tree/main/src/python#configuration) for a list of pre-built Docker images)
-1. change the config options in `.precommit-config.yaml`
-1. change the version number in `.github/workflows/python.yaml`
+1. Change the config options in `.precommit-config.yaml`
+1. Change the version number in `.github/workflows/python.yaml`
 
 ## Development instructions
 

@@ -11,7 +11,10 @@ It includes `pytest` for testing plus the `pytest-cov` plugin to measure coverag
 
 The checks and tests are all run using Github actions on every pull request and merge to main.
 
-This repository is setup for Python 3.11. To customize that, change the `VARIANT` argument in `.devcontainer/devcontainer.json`, change the config options in `.precommit-config.yaml` and change the version number in `.github/workflows/python.yaml`.
+This repository is setup for Python 3.11. To customize that:
+1. Change the `image` argument in `.devcontainer/devcontainer.json` (see [https://github.com/devcontainers/images/tree/main/src/python](https://github.com/devcontainers/images/tree/main/src/python#configuration) for a list of pre-built Docker images)
+1. change the config options in `.precommit-config.yaml`
+1. change the version number in `.github/workflows/python.yaml`
 
 ## Development instructions
 
@@ -55,7 +58,6 @@ Here's a short explanation of each file/folder in this template:
 
 * `.devcontainer`: Folder containing files used for setting up a devcontainer
   * `devcontainer.json`: File configuring the devcontainer, includes VS Code settings
-  * `Dockerfile`: File with commands to build the devcontainer's Docker image
 * `.github`: Folder for Github-specific files and folders
   * `workflows`: Folder containing Github actions config files
     * `python.yaml`: File configuring Github action that runs tools and tests

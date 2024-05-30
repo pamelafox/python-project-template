@@ -33,7 +33,11 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r requirements-dev.txt && pre-commit install",
+	// Fix for https://www.kenmuse.com/blog/avoiding-dubious-ownership-in-dev-containers/
+	"postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+
+	// Use 'postStartCommand' to run commands after the container is started (more frequently than create).
+	"postStartCommand": "pip3 install --user -r requirements-dev.txt && pre-commit install",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"

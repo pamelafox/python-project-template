@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "python",
+            "name": "debug main.py",
+            "request": "launch",
+            "justMyCode": false,
+            "args": [],
+            "program": "c:\\xdebug\\python-project-template\\main.py"
+        }
+    ]
+}

@@ -2,7 +2,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.0/containers/python-3
 {
     "name": "Python 3",
-    "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
 
     // Configure tool-specific properties.
     "customizations": {
